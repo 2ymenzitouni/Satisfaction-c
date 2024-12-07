@@ -1,0 +1,121 @@
+/* ===========Generals=========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Parkinsans' , 'sans-serif';
+}
+.container{
+    padding: 0 100px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i.fa-star{
+    color: #ffc800;
+    padding: 0 8px 0 10px;
+}
+/* ===========Generals=========== */
+
+/* ===========header=========== */
+header{
+    background-color: rgb(45, 131, 229);
+    padding: 20px 0;
+}
+header .container{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+header .container .logo{
+    color: #fff;
+}
+header .container ul.list{
+    display: flex;
+    align-items: center;
+    gap:0 10px;
+}
+header .container ul.list li a{
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+header .container ul.list li:nth-child(1) a{
+    background-color: green;
+}
+header .container ul.list li:nth-child(2) a{
+    background-color: red;
+}
+/* ===========header=========== */
+/* ===========main=========== */
+.avis{
+    padding-top: 30px;
+}
+.avis .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avis .container .user{
+    /* width: 50vw; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 30px;
+}
+.avis .container .user .item{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    /* padding: 15px 10px 15px 20px; */
+    padding: 30px 50px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 5px 3px 4px rgba(175, 175, 175, 0.5);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.avis .container .col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+.avis .container .col-1 .image{
+    width: 70px;
+}
+.avis .container .col-1 .image img{
+    width: 100%;
+}
+.avis .container .col-1 p{
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+.avis .container .col-1 p span{
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.avis .container .col-2{
+
+}
+.avis .container .col-2 p.rating{
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.avis .container .col-2 p.rating span{
+    font-weight: normal;
+}
+.avis .container .col-2 p.comment{
+    font-weight: bold;
+    color: red;
+}
+.avis .container .col-2 p.comment span{
+    color: #6b6b6b;
+}
+
+/* ===========main=========== */
+
+

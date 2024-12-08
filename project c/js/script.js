@@ -11,9 +11,8 @@ fetch('clients.txt')
   })
   .then(data => {
     lignes = data.split('\r\n');
-    nbl = lignes.length
     lignes.pop()
-    console.log(lignes)
+    nbl = lignes.length
     lignes.forEach(element => {
         // ===========Create item=========
         const item = document.createElement('div')
@@ -33,7 +32,23 @@ fetch('clients.txt')
         // ===========Create item=========
        
     });
+
     document.querySelector("h1.avis").innerHTML += `(La Moyenne <span style="color:#ffc800">${(total_avis/ nbl).toFixed(2)}</span><i class="fa-solid fa-star"></i>)`
+    if((total_avis/ nbl).toFixed(2) >= 1 && (total_avis/ nbl).toFixed(2) < 2 || (total_avis/ nbl).toFixed(2) < 1 ){        
+      document.querySelector(".result").innerHTML = `Malheuresement la moyenne indique que les client sont Très Dissatisfaits😑`;
+    }
+    else if((total_avis/ nbl).toFixed(2) >= 2  && (total_avis/ nbl).toFixed(2) < 3){
+      document.querySelector(".result").innerHTML = `La moyenne indique que les client sont Dissatisfaits😑`;
+    }
+    else if((total_avis/ nbl).toFixed(2) >= 3  && (total_avis/ nbl).toFixed(2) < 4){
+      document.querySelector(".result").innerHTML = `La moyenne indique que les client sont Neutres😑`;
+    }
+    else if((total_avis/ nbl).toFixed(2) >= 4  && (total_avis/ nbl).toFixed(2) < 5){
+      document.querySelector(".result").innerHTML = `Félicitations la moyenne indique que les client sont Saisfaits🙂`;
+    }
+    else if((total_avis/ nbl).toFixed(2) >= 5 ){
+      document.querySelector(".result").innerHTML = `Félicitations la moyenne indique que les client sont Très Satisafait🫡`;
+    }
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);

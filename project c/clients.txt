@@ -1,18 +1,1 @@
-aymen;8;behya
-1;1;1
-yassine;9;khedma tayra
-3;1;d
-yassine;7;islem yassine
-Islem;7;khedma ki wjouhkm
-Aymen;8;hello world
-Aymen;19;hello world
-urbest;7;a7la
-Aymen;7;behya
-Aymen;7;eeee
-Aymen;7;eeeee
-Oumaima;8;ez
-Aymen;10;ppp
-si Aymen;10;eee
-f;6;ttttAymen;8;me3ejbetnich
-SI Aymen;10;eeeeeeeeeeeeeeeeeeeeee
-E;10;eeeeeeee
+Aymen;6;dddddddddd—

@@ -13,6 +13,17 @@ body{
 ul{
     list-style: none;
 }
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+    padding-bottom: 20px;
+}
+ol li{
+    display: list-item;
+    list-style-position: inside;
+}
 a{
     text-decoration: none;
 }
@@ -56,21 +67,26 @@ header .container ul.list li:nth-child(2) a{
 .avis{
     padding-top: 30px;
 }
-.avis .container{
+/* .avis .container{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .avis .container .user{
     /* width: 50vw; */
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0 30px;
+    gap: 0 50px;
+}
+@media only screen and (max-width:1150px) {
+    .avis .container .user{
+        grid-template-columns: auto;
+    }
 }
 .avis .container .user .item{
     display: flex;
     align-items: center;
-    gap: 0 20px;
+    gap: 0 50px;
     /* padding: 15px 10px 15px 20px; */
     padding: 30px 50px;
     background-color: rgb(233, 233, 233);
